@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    line-height: 1.5;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #aaa;
+}
+
+section {
+    min-height: 200px;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: #bbb;
+    border: 1px solid black;
+}
+
+.screenshot {
+    height: 80px;
+    width: 90px;
+    background: black;
+    margin: auto;
+}
+
+.profile-pic {
+    height: 60px;
+    width: 60px;
+    background: black;
+    float: left;
+    position: relative;
+    top: 20px;
+    bottom: 2px;
+    left: 30%;
+
+}
+
+footer {
+    background-color: #aaa;
+}
