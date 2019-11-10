@@ -15,7 +15,7 @@
             <p>Kevin P. Moore</p>
             <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar"></button>
         </div>
-        <div id="navbar">
+        <div id="navbar" class="hidden">
             <a class="jumper" href="#about-me">About Me</a>
             <a class="jumper" href="#portfolio">Portfolio</a>
             <a href="https://github.com/KevinPMoore">Github</a>
@@ -23,13 +23,15 @@
             <a class="jumper" href="#contact">Contact Me</a>
         </div>
     </nav>
-    <main role="main">
-        <header role="banner">
-            <h1>Hero</h1>
-        </header>
+    <header  class="hero" role="banner">
+        <img src="../images/hero.png" alt="a close-up picture of me">
+        <h1>Kevin P. Moore</h1>
+        <h2>Fullstack Developer and Designer</h2>
+    </header>
+    <main role="main" id="main">
         <section class="about-me" id="about-me">
             <h2>About Me</h2>
-            <p>I’m a fullstack web developer based out of Atlanta, GA.  Trying to understand how things work has always fascinated me.  
+            <p>Hi, Im Kevin.  I’m a fullstack web developer based out of Atlanta, GA.  Trying to understand how things work has always fascinated me.  
                     That fascination has driven me from a kid who spent countless hours playing with LEGOs to graduate studies in 
                     psychology and clinical social work.  I always found myself spending much of my free time at my computer despite 
                     knowing very little about how it worked.  In a past life I worked to help people understand how they work in the context of their 
@@ -42,16 +44,14 @@
         <section class="portfolio" id="portfolio">
             <h2>Portfolio</h2>
             <h3>Kitchen Metrics Quiz</h3>
-            <img src="../assets/quiz.png" alt="the start screen of a quiz with cooking ingredients in the background">
-            <div class="screenshot"></div>
+            <img class="quiz" src="../images/quiz.png" alt="the start screen of a quiz with cooking ingredients in the background">
             <p>Get handy in the kitchen using this quick quiz app to learn metric conversions! This app allows users to test their knowledge of 
                 metric conversions commonly used in cooking. Score and progress are displayed across the top of the screen.</p>
             <p>This project was built using HTML, Javascript and Jquery.</p>
             <a href="https://thinkful-ei-iguana.github.io/Caleb-Kevin-Quiz/">Try it out</a>
             <a href="https://github.com/thinkful-ei-iguana/Caleb-Kevin-Quiz">See the code</a>
             <h3>Bookmark Manager</h3>
-            <img class="bookmarks" src="../assets/bookmarks.png" alt="a bookmark app showing expanded and collapsed bookmarks">
-            <div class="screenshot"></div>
+            <img class="bookmarks" src="../images/bookmarks.png" alt="a bookmark app showing expanded and collapsed bookmarks">
             <p>A simple, intuitive application for gathering and sorting bookmarks to your favorite websites. Users can add and delete bookmakrs 
                 to different websites, while creating rankings and short descriptions. Bookmarks can also be filtered by rating.</p>
             <p>This project was built using HTML, Javascript, Jquery and API interfacing.</p>
@@ -60,11 +60,16 @@
         </section>
         <section class="contact" id="contact">
             <h2>Contact</h2>
-            <img img class="profile" src="../assets/profile.png" alt="a pciture of me in front of a lake on a cloudy day">
-            <div class="profile-pic"></div>
-            <p>Check out all my work on my <a href="https://github.com/KevinPMoore">Github</a> page</p>
-            <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/kevin-moore-8b972933/">LinkedIn</a></p>
-            <p>You can also shoot me an email at moore.kevin.p@gmail.com</p>
+            <div class="container"></div>
+                <div class="profile-pic">
+                    <img img class="profile" src="../images/profile.png" alt="a picture of me in front of a lake on a cloudy day">
+                </div>
+                <div class="info">
+                    <p>Check out all my work on my <a href="https://github.com/KevinPMoore">Github</a> page</p>
+                    <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/kevin-moore-8b972933/">LinkedIn</a></p>
+                    <p>You can also shoot me an email at moore.kevin.p@gmail.com</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer role="contact-info">Email me at: moore.kevin.p@gmail.com</footer>

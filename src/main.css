@@ -5,6 +5,8 @@
 body {
     text-align: center;
     line-height: 1.5;
+    height: 100vh;
+    width: 100%;
 }
 
 nav {
@@ -12,39 +14,192 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #aaa;
+    background-color: black;
+    height: 56px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-container p {
+    font-family: 'proza libre', serif;
+    color: pink;
+    margin-left: 1%;
+}
+
+.nav-container button {
+    margin-right: 1%;
 }
 
 #navbar {
-    display: none;
+    background: black;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+a {
+    color: pink;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+button.navbar-toggle {
+    margin: 1%;
+    width: 3%;
+}
+
+header {
+    position: relative;
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+header img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: auto;
+    min-height: 300px;
+    z-index: -1;
+}
+
+h1 {
+    visibility: hidden;
+    position: absolute;
+    left: 2px;
+    top: 1px;
+}
+
+header h2 {
+    position: absolute;
+    bottom: 0;
+}
+
+main {
+    background: url(../images/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+    font-family: 'proza libre', serif;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: pink;
+}
+
+p {
+    font-family: 'open sans', sans-serif;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: pink;
 }
 
 section {
     min-height: 200px;
     margin-left: 8%;
     margin-right: 8%;
-    background-color: #bbb;
     border: 1px solid black;
 }
 
-.screenshot {
-    height: 80px;
-    width: 90px;
-    background: black;
-    margin: auto;
+section.about-me {
+    border-top: 1px solid pink;
+    border-left: 1px solid pink;
+    border-right: 1px solid pink;
 }
 
-.profile-pic {
-    height: 60px;
-    width: 60px;
-    background: black;
-    float: left;
-    position: relative;
-    top: 20px;
-    bottom: 2px;
-    left: 30%;
+section.about-me p {
+    font-size: 1.3rem;
+    margin: 1%;
+    text-align: left;
+}
+
+section.portfolio {
+    border-left: 1px solid pink;
+    border-right: 1px solid pink;
+}
+
+section.portfolio p {
+    margin: 1%;
+}
+
+img.quiz {
+max-width: 65%;
+height: auto;
+border: pink 2px solid;
+border-radius: 1%;
+}
+
+img.bookmarks {
+max-width: 100%;
+height: 500px;
+border: pink 2px solid;
+border-radius: 1%;
+}
+
+section.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: 1px solid pink;
+    border-right: 1px solid pink;
+    border-bottom: 1px solid pink;
+}
+
+img.profile {
+    max-width: 40%;
+    height: auto;
+    border: pink 2px solid;
+    border-radius: 1%;
+    margin-top: 1%;
 }
 
 footer {
-    background-color: #aaa;
+    background-color:black;
+    color: pink;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        visibility: visible;
+        position: absolute;
+        left: 2px;
+        top: 1px;
+    }
+
+    button.navbar-toggle {
+        visibility: hidden;
+    }
+
+    .hidden {
+        visibility: visible;
+    }
+
+    section.contact {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header h2 {
+        position: absolute;
+        left: 2px;
+        top: 60px;
+    }
 }

@@ -1,6 +1,6 @@
 const handleExpandNavbar = function() {
   $('.navbar-toggle').on('click', event => {
-    $('#navbar').toggle();
+    $('#navbar').toggleClass('hidden');
   });
 };
   
