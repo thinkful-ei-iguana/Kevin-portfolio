@@ -1,3 +1,5 @@
+This project is hosted at https://thinkful-ei-iguana.github.io/kevin-portfolio/
+
 Portfolio Requirements
 
 To be approved, your portfolio site will need to meet the following requirements. These requirements are designed to ensure your site will be up to snuff when hiring managers look at it.
