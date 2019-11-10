@@ -15,6 +15,10 @@ nav {
     background-color: #aaa;
 }
 
+#navbar {
+    display: none;
+}
+
 section {
     min-height: 200px;
     margin-left: 8%;
@@ -39,7 +43,6 @@ section {
     top: 20px;
     bottom: 2px;
     left: 30%;
-
 }
 
 footer {
