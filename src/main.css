@@ -203,3 +203,11 @@ footer {
         top: 60px;
     }
 }
+
+header img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: auto;
+    min-height: 300px;
+    z-index: -1;
+}
