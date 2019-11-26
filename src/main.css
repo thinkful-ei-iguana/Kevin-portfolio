@@ -7,7 +7,7 @@
 body {
     text-align: center;
     line-height: 1.5;
-    height: 100vh;
+    height: 100;
     width: 100%;
 }
 
@@ -18,6 +18,7 @@ nav {
     right: 0;
     background-color: black;
     height: 56px;
+    z-index: +1;
 }
 
 .nav-container {
@@ -46,12 +47,17 @@ nav {
 
 a {
     color: pink;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    background-color: black;
+    border: 2px solid pink;
+    text-decoration: none;
+    margin: 2%;
     font-size: 1.2rem;
+}
+
+a:hover {
+    background-color:pink;
+    color: black;
+    box-shadow: gray;
 }
 
 button.navbar-toggle {
@@ -72,10 +78,11 @@ header {
 
 header img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 200px;
     min-width: auto;
-    min-height: 300px;
+    min-height: 100px;
     z-index: -1;
+    border-bottom: 1px solid pink;
 }
 
 h1 {
@@ -89,6 +96,7 @@ h1 {
 header h2 {
     position: absolute;
     bottom: 0;
+    left: 20px;
     z-index: -1;
 }
 
@@ -108,6 +116,28 @@ h1, h2, h3 {
     color: pink;
 }
 
+.about-me h2 {
+    border-left: 1px solid pink;
+    border-right: 1px solid pink;
+    border-bottom: 1px solid pink;
+    border-top: 1px solid pink;
+}
+
+.portfolio h2 {
+    border-left: 1px solid pink;
+    border-right: 1px solid pink;
+    border-bottom: 1px solid pink;
+    border-top: 1px solid pink;
+}
+
+.contact h2 {
+    width: 100%;
+    border-left: 1px solid pink;
+    border-right: 1px solid pink;
+    border-bottom: 1px solid pink;
+    border-top: 1px solid pink;
+}
+
 p {
     font-family: 'open sans', sans-serif;
     text-shadow:
@@ -123,12 +153,15 @@ section {
     margin-left: 8%;
     margin-right: 8%;
     border: 1px solid black;
+    background-color: black;
+    opacity: 0.9;
 }
 
 section.about-me {
     border-top: 1px solid pink;
     border-left: 1px solid pink;
     border-right: 1px solid pink;
+    border-bottom: 1px solid pink;
 }
 
 section.about-me p {
@@ -140,6 +173,22 @@ section.about-me p {
 section.portfolio {
     border-left: 1px solid pink;
     border-right: 1px solid pink;
+    border-bottom: 1px solid pink;
+    display: flex;
+    flex-direction: column;
+}
+
+section.portfolio h2 {
+    display: block;
+}
+
+.project {
+    width: 100%;
+    min-height: 200px;
+    border-left: 1px solid pink;
+    border-right: 1px solid pink;
+    border-bottom: 1px solid pink;
+    border-top: 1px solid pink;
 }
 
 section.portfolio p {
@@ -147,15 +196,15 @@ section.portfolio p {
 }
 
 img.quiz {
-max-width: 65%;
-height: auto;
+max-width: 80%;
+height: 200px;
 border: pink 2px solid;
 border-radius: 1%;
 }
 
 img.bookmarks {
-max-width: 100%;
-height: 500px;
+max-width: 80%;
+height: 200px;
 border: pink 2px solid;
 border-radius: 1%;
 }
@@ -163,7 +212,7 @@ border-radius: 1%;
 section.contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     border-left: 1px solid pink;
     border-right: 1px solid pink;
@@ -176,6 +225,19 @@ img.profile {
     border: pink 2px solid;
     border-radius: 1%;
     margin-top: 1%;
+}
+
+.contact-link {
+    border: none;
+    margin: 0;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.contact-link:hover {
+    color: black;
+    background-color: pink;
+    text-shadow: none;
 }
 
 footer {
@@ -199,13 +261,35 @@ footer {
         visibility: visible;
     }
 
+    .project-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .project {
+        display: inline-block;
+        width: 50%;
+    }
+
     section.contact {
         flex-direction: row;
     }
-}
 
-a {
-    font-size: 1.3rem;
+    a {
+        font-size: 1.3rem;
+    }
+
+    .contact h2 {
+        width: 50%;
+        border: none;
+    }
+
+    .contact-container {
+        width: 50%;
+        border-left: 1px solid pink;
+    }
+
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -218,7 +302,7 @@ a {
 
 header img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 920px;
     min-width: auto;
     min-height: 300px;
     z-index: -1;
