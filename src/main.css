@@ -65,7 +65,13 @@ button.navbar-toggle {
     width: 6%;
     height: auto;
     background: url(../images/burger-icon.png);
-    background-size: auto;
+    background-size: 100%;
+    border: none;
+}
+
+button.navbar-toggle:hover {
+    background: url(../images/burger-icon\ -\ grey.png);
+    background-size: 100%;
 }
 
 header {
