@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border-spacing: 0;
 }
 
 body {
@@ -46,18 +47,17 @@ nav {
 }
 
 a {
-    color: pink;
-    background-color: black;
-    border: 2px solid pink;
+    color: black;
+    background-color:#939293;
+    border: 2px solid #3854AE;
     text-decoration: none;
     margin: 2%;
     font-size: 1.2rem;
 }
 
 a:hover {
-    background-color:pink;
-    color: black;
-    box-shadow: gray;
+    background-color:#3854AE;
+    color: #939293;
 }
 
 button.navbar-toggle {
@@ -88,7 +88,7 @@ header img {
     min-width: auto;
     min-height: 100px;
     z-index: -1;
-    border-bottom: 1px solid pink;
+    border-bottom: 2px solid #B16558;
 }
 
 h1 {
@@ -97,6 +97,7 @@ h1 {
     left: 10px;
     top: 1px;
     z-index: -1;
+    color: pink;
 }
 
 header h2 {
@@ -114,44 +115,40 @@ main {
 
 h1, h2, h3 {
     font-family: 'proza libre', serif;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+}
+
+header h2 {
     color: pink;
 }
 
 .about-me h2 {
-    border-left: 1px solid pink;
-    border-right: 1px solid pink;
-    border-bottom: 1px solid pink;
-    border-top: 1px solid pink;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #B16558;
+    border-top: 0px solid #B16558;
+    color: #B16558;
 }
 
 .portfolio h2 {
-    border-left: 1px solid pink;
-    border-right: 1px solid pink;
-    border-bottom: 1px solid pink;
-    border-top: 1px solid pink;
+    border-left: 1px solid #B16558;
+    border-right: 1px solid #B16558;
+    border-bottom: 1px solid #B16558;
+    border-top: 1px solid #B16558;
+    color: #B16558;
 }
 
 .contact h2 {
     width: 100%;
-    border-left: 1px solid pink;
-    border-right: 1px solid pink;
-    border-bottom: 1px solid pink;
-    border-top: 1px solid pink;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #B16558;
+    border-top: none;
+    color: #B16558;
 }
 
 p {
     font-family: 'open sans', sans-serif;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-    color: pink;
+    color: #939293;
 }
 
 section {
@@ -164,10 +161,10 @@ section {
 }
 
 section.about-me {
-    border-top: 1px solid pink;
-    border-left: 1px solid pink;
-    border-right: 1px solid pink;
-    border-bottom: 1px solid pink;
+    border-top: 0px solid #B16558;
+    border-left: 2px solid #B16558;
+    border-right: 2px solid #B16558;
+    border-bottom: 1px solid #B16558;
 }
 
 section.about-me p {
@@ -177,9 +174,10 @@ section.about-me p {
 }
 
 section.portfolio {
-    border-left: 1px solid pink;
-    border-right: 1px solid pink;
-    border-bottom: 1px solid pink;
+    border-left: 1px solid #B16558;
+    border-right: 1px solid #B16558;
+    border-bottom: 1px solid #B16558;
+    border-top: none;
     display: flex;
     flex-direction: column;
 }
@@ -191,10 +189,10 @@ section.portfolio h2 {
 .project {
     width: 100%;
     min-height: 200px;
-    border-left: 1px solid pink;
-    border-right: 1px solid pink;
-    border-bottom: 1px solid pink;
-    border-top: 1px solid pink;
+    border-left: 1px solid #B16558;
+    border-right: 1px solid #B16558;
+    border-bottom: 1px solid #B16558;
+    border-top: 1px solid #B16558;
 }
 
 section.portfolio p {
@@ -204,14 +202,14 @@ section.portfolio p {
 img.quiz {
 max-width: 80%;
 height: 200px;
-border: pink 2px solid;
+border: #B16558 2px solid;
 border-radius: 1%;
 }
 
 img.bookmarks {
 max-width: 80%;
 height: 200px;
-border: pink 2px solid;
+border: #B16558 2px solid;
 border-radius: 1%;
 }
 
@@ -220,15 +218,16 @@ section.contact {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-left: 1px solid pink;
-    border-right: 1px solid pink;
-    border-bottom: 1px solid pink;
+    border-top: none;
+    border-left: 2px solid #B16558;
+    border-right: 2px solid #B16558;
+    border-bottom: 2px solid #B16558;
 }
 
 img.profile {
     max-width: 40%;
     height: auto;
-    border: pink 2px solid;
+    border: #B16558 1px solid;
     border-radius: 1%;
     margin-top: 1%;
 }
@@ -238,11 +237,13 @@ img.profile {
     margin: 0;
     font-size: 1.2rem;
     text-decoration: underline;
+    color: #939293;
+    background-color: transparent;
 }
 
 .contact-link:hover {
-    color: black;
-    background-color: pink;
+    color: #939293;
+    background-color: #3854AE;
     text-shadow: none;
 }
 
@@ -287,14 +288,17 @@ footer {
 
     .contact h2 {
         width: 50%;
-        border: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-top: none;
     }
 
     .contact-container {
         width: 50%;
-        border-left: 1px solid pink;
+        margin-left: -1px;
+        border-left: 2px solid #B16558;
     }
-
 
 }
 
